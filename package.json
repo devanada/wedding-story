@@ -8,6 +8,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "@headlessui/react": "^1.6.6",
+    "dayjs": "^1.11.4",
     "next": "latest",
     "next-pwa": "5.5.4",
     "react": "18.1.0",
