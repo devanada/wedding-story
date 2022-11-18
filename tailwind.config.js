@@ -6,11 +6,17 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        gold: "#BFB298",
+        "gold-2": "#7A4604",
+        "gold-3": "#805C11",
+      },
+    },
     fontFamily: {
       cormorant: ['"Cormorant"'],
       javanese: ['"Noto Sans Javanese"'],
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };

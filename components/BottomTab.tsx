@@ -1,13 +1,13 @@
 import { IoHome, IoLocation, IoCalendar } from "react-icons/io5";
 import { GiLinkedRings } from "react-icons/gi";
 import { useState } from "react";
-import Link from "next/link";
 
 interface MenusType {
   id: number;
   title: string;
   logo: any;
   href: string;
+  active: boolean;
 }
 
 export default function BottomTab() {
@@ -17,24 +17,28 @@ export default function BottomTab() {
       title: "Home",
       logo: IoHome,
       href: "section-home",
+      active: true,
     },
     {
       id: 2,
       title: "Couple",
       logo: GiLinkedRings,
       href: "section-couple",
+      active: false,
     },
     {
       id: 3,
       title: "Location",
       logo: IoLocation,
       href: "section-location",
+      active: false,
     },
     {
       id: 4,
-      title: "Date",
+      title: "Gift",
       logo: IoCalendar,
-      href: "section-date",
+      href: "section-gift",
+      active: false,
     },
   ]);
 
@@ -43,15 +47,15 @@ export default function BottomTab() {
   };
 
   return (
-    <div className="w-full grid grid-cols-4 gap-2 sticky bottom-0 bg-gray-100 dark:bg-zinc-800">
+    <div className="btm-nav sticky bottom-0 bg-gray-100 dark:bg-zinc-800">
       {menus.map((menu) => (
         <div
           key={menu.id}
-          className="flex flex-col items-center justify-center cursor-pointer p-1 text-gray-500 focus:text-teal-500 hover:text-teal-500"
+          className="flex cursor-pointer flex-col items-center justify-center text-gray-500 hover:text-teal-500 focus:text-teal-500 "
           onClick={() => handleScroll(menu.href)}
         >
-          <menu.logo className="text-2xl" />
-          <p className="text-lg">{menu.title}</p>
+          <menu.logo className="text-2xl text-gold" />
+          <p className="text-lg text-gold">{menu.title}</p>
         </div>
       ))}
     </div>
