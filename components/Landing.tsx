@@ -23,6 +23,7 @@ function Landing({ onClick }: Props) {
               <p className="text-center font-cormorant text-xl text-gold">
                 To:
               </p>
+              {/* TODO: Fetch from API */}
               <p className="text-center font-cormorant text-3xl text-gold">
                 Test
               </p>
