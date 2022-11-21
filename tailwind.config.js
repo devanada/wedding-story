@@ -16,6 +16,7 @@ module.exports = {
     fontFamily: {
       cormorant: ['"Cormorant"'],
       javanese: ['"Noto Sans Javanese"'],
+      island: ['"Island Moments"'],
     },
   },
   plugins: [require("daisyui")],

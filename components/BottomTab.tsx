@@ -47,7 +47,7 @@ export default function BottomTab() {
   };
 
   return (
-    <div className="btm-nav sticky bottom-0 bg-gray-100 dark:bg-zinc-800">
+    <div className="btm-nav sticky bg-zinc-800">
       {menus.map((menu) => (
         <div
           key={menu.id}

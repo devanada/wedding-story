@@ -32,21 +32,29 @@ function Home() {
   };
 
   return (
-    <Section id="section-home">
-      <div className="relative flex h-full w-full flex-col items-center justify-center">
-        {/* <img
-          src="/images/flower-pattern.png"
-          alt="placehold images"
-          className="w-96 h-96 absolute inset-0 m-auto"
-        /> */}
-        <p className="font-cormorant text-3xl text-gold-2">
+    <Section id="section-home" full>
+      <div
+        style={{
+          backgroundImage: `url(/images/background.jpg)`,
+        }}
+        className="relative flex h-full w-full flex-col items-center justify-center gap-6 bg-cover bg-center"
+      >
+        {/* https://www.freepik.com/search?color=black&format=search&last_filter=color&last_value=black&query=wedding%20floral */}
+        <h1 className="font-cormorant text-3xl uppercase text-white">
+          The Wedding Of
+        </h1>
+        <p className="font-island text-6xl text-white">Yoga & Debby</p>
+        <p className="font-cormorant text-3xl text-white">
           {dayjs(theDay).format("dddd, DD MMMM YYYY")}
         </p>
         <div className="grid auto-cols-max grid-flow-col gap-5 text-center">
           {countdown.map((item: number, index: number) => {
             var style: any = { "--value": item } as React.CSSProperties;
             return (
-              <div className="flex flex-col text-gold-2">
+              <div
+                className="rounded-box flex flex-col bg-neutral/50 p-2 text-white"
+                key={index}
+              >
                 <span
                   className={clsx(
                     item < 99 && "countdown",

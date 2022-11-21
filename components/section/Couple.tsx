@@ -23,6 +23,9 @@ function Couple() {
             <p className="text-center font-javanese text-2xl text-gold-2">
               ꧋ꦪꦺꦴꦒꦱ꧀ꦮꦩꦶꦣꦼꦮ꦳ꦤꦣ
             </p>
+            <p className="break-words text-center font-cormorant text-lg text-gold-2">
+              Putra pertama dari Bapak Hermanto Priyotomo & Ibu Titik Afriati
+            </p>
           </div>
           <span className="text-center font-cormorant text-2xl font-semibold text-gold-2">
             &#38;
@@ -33,6 +36,9 @@ function Couple() {
             </p>
             <p className="text-center font-javanese text-2xl text-gold-2">
               ꧋ꦣꦼꦧ꧀ꦧ꧀ꦪ꧀ꦩꦸꦭꦶꦪꦮꦠꦶꦒꦸꦠꦩ
+            </p>
+            <p className="break-words text-center font-cormorant text-lg text-gold-2">
+              Putri pertama dari Bapak Sai'in & Ibu Astianik
             </p>
           </div>
         </div>

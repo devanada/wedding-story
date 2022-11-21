@@ -8,7 +8,7 @@ class MyDocument extends Document {
           <link rel="manifest" href="/manifest.json" />
           <link rel="apple-touch-icon" href="/icon.png"></link>
           <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant&family=Noto+Sans+Javanese&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant&family=Noto+Sans+Javanese&family=Island+Moments&display=swap"
             rel="stylesheet"
           />
           <link rel="preconnect" href="https://fonts.googleapis.com"></link>

@@ -18,7 +18,8 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 0px;
+  height: 0px;
   background-color: transparent;
 }
 
