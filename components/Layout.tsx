@@ -1,7 +1,7 @@
 import Head from "next/head";
 
 interface LayoutProps {
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 /* 
 TODO: Add internationalization support

@@ -7,7 +7,7 @@ function Location() {
     <Section id="section-location" full>
       <div
         style={{
-          backgroundImage: `url(/images/background.jpg)`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/images/background.jpg)`,
         }}
         className="relative flex h-full w-full flex-col items-center justify-center bg-cover bg-center"
       >

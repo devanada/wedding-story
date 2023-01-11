@@ -3,9 +3,10 @@ import React from "react";
 
 interface Props {
   onClick?: () => void;
+  guestName: string;
 }
 
-function Landing({ onClick }: Props) {
+function Landing({ onClick, guestName }: Props) {
   return (
     <>
       <section className="section-container bg-black">
@@ -23,9 +24,8 @@ function Landing({ onClick }: Props) {
               <p className="text-center font-cormorant text-xl text-gold">
                 To:
               </p>
-              {/* TODO: Fetch from API */}
-              <p className="text-center font-cormorant text-3xl text-gold">
-                Test
+              <p className="break-words bg-black/80 text-center font-cormorant text-3xl text-gold">
+                {guestName ? guestName : ""}
               </p>
             </div>
             <div className="absolute inset-0 m-auto h-1/2 w-3/4">

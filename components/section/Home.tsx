@@ -35,7 +35,7 @@ function Home() {
     <Section id="section-home" full>
       <div
         style={{
-          backgroundImage: `url(/images/background.jpg)`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/images/background.jpg)`,
         }}
         className="relative flex h-full w-full flex-col items-center justify-center gap-6 bg-cover bg-center"
       >
@@ -47,12 +47,12 @@ function Home() {
         <p className="font-cormorant text-3xl text-white">
           {dayjs(theDay).format("dddd, DD MMMM YYYY")}
         </p>
-        <div className="grid auto-cols-max grid-flow-col gap-5 text-center">
+        <div className="grid grid-flow-row auto-rows-max grid-cols-2 gap-5 text-center md:grid-cols-4">
           {countdown.map((item: number, index: number) => {
             var style: any = { "--value": item } as React.CSSProperties;
             return (
               <div
-                className="rounded-box flex flex-col bg-neutral/50 p-2 text-white"
+                className="rounded-box flex flex-col items-center bg-neutral/50 p-2 text-white"
                 key={index}
               >
                 <span
