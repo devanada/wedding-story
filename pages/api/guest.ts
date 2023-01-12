@@ -52,7 +52,7 @@ export default async function handler(
     if (check) {
       return res
         .status(409)
-        .json({ message: "Guest already created", data: null });
+        .json({ message: "Guest already created", data: check });
     }
     await addDoc(dbInstance, {
       name: name,
@@ -75,10 +75,17 @@ export default async function handler(
 }
 
 async function checkName(name: string) {
-  let result = false;
+  let result = null;
   await getDocs(dbInstance).then((docs) => {
     docs.forEach((doc) => {
-      if (doc.data().name === name) result = true;
+      if (doc.data().name === name) {
+        result = {
+          id: doc.id,
+          name: doc.data().name,
+          open: doc.data().open,
+          open_count: doc.data().open_count,
+        };
+      }
     });
   });
   return result;
