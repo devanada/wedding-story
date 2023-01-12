@@ -6,9 +6,9 @@ import type { NextPage } from "next";
 import BottomTab from "components/BottomTab";
 import Landing from "components/Landing";
 import Layout from "components/Layout";
-import Home from "section/Home";
-import Couple from "section/Couple";
 import Location from "section/Location";
+import Couple from "section/Couple";
+import Home from "section/Home";
 import Gift from "section/Gift";
 
 interface Props {
